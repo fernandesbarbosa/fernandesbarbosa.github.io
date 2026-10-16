@@ -144,7 +144,7 @@
   .t-item .t-desc{ font-size:14.5px; color:var(--text-muted); max-width:60ch; }
 
   /* ---------- PROJECTS ---------- */
-  .projects-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
+  .projects-grid{ display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:20px; max-width:900px; }
   @media (max-width:900px){ .projects-grid{ grid-template-columns:1fr; } }
   .pcard{ background:var(--bg-panel); border:1px solid var(--border); border-radius:10px; padding:24px; display:flex; flex-direction:column; gap:12px; transition:border-color 0.15s ease; }
   .pcard:hover{ border-color:var(--accent-dim); }
@@ -291,24 +291,18 @@
         <span class="idx">04</span>
       </div>
       <div class="projects-grid">
-        <div class="pcard">
-          <span class="p-tag">EM BREVE</span>
-          <h3>Nome do projeto 1</h3>
-          <p>Espaço reservado — troque por um projeto real, com uma frase sobre o problema que ele resolve.</p>
-          <span class="p-link">ver repositório →</span>
-        </div>
-        <div class="pcard">
-          <span class="p-tag">EM BREVE</span>
-          <h3>Nome do projeto 2</h3>
-          <p>Espaço reservado — troque por um projeto real, com uma frase sobre o problema que ele resolve.</p>
-          <span class="p-link">ver repositório →</span>
-        </div>
-        <div class="pcard">
-          <span class="p-tag">EM BREVE</span>
-          <h3>Nome do projeto 3</h3>
-          <p>Espaço reservado — troque por um projeto real, com uma frase sobre o problema que ele resolve.</p>
-          <span class="p-link">ver repositório →</span>
-        </div>
+        <article class="pcard">
+          <span class="p-tag">PROJETO WEB</span>
+          <h3>Portal Palavras Mágicas</h3>
+          <p>Um portal dedicado ao universo dos livros, pensado para reunir experiências de leitura em uma interface acolhedora e fácil de explorar.</p>
+          <a class="p-link" href="https://fernandesbarbosa.github.io/portal-palavras-magicas/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Portal Palavras Mágicas em uma nova aba">acessar projeto ↗</a>
+        </article>
+        <article class="pcard">
+          <span class="p-tag">SISTEMA WEB</span>
+          <h3>GESTÃO-ON</h3>
+          <p>Projeto de sistema web com foco em organização e gestão, desenvolvido para centralizar informações e facilitar processos do dia a dia.</p>
+          <a class="p-link" href="https://fernandesbarbosa.github.io/GESTAO-ON/" target="_blank" rel="noopener noreferrer" aria-label="Abrir GESTÃO-ON em uma nova aba">acessar projeto ↗</a>
+        </article>
       </div>
     </div>
   </section>
